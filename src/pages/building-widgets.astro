@@ -1,0 +1,141 @@
+---
+import Layout from '../layouts/Layout.astro';
+---
+
+<Layout title="Building widgets — Case study" bodyClass="sans-serif near-black bg-white page">
+  <main class="content cf pa3 pa4-m pa5-l mw9 center">
+    <div class="fr w-100 w-80-l cf">
+      <p class="f6 black-40">Project</p>
+      <h1 class="f2 f1-l lh-title mt0">Building a widget</h1>
+      <p class="f5 mt0 mb4 mb5-ns measure-wide lh-copy">Widgets are the combination of a metric and data visualisation. They are the building blocks of customer dashboards and one of the key concepts in Geckoboard. This case study covers the design process taken to create our latest widget building experience.</p>
+    </div>
+    <section>
+      <img src="/img/case-studies/visualizations/dark.png" class="db w-80-ns w-100 br2 shadow-2 b--near-black center pa3 bg-black border-box" alt="Dark theme dashboard"/>
+      <p class="f6 black-40 mv4 tc mb4 mb5-ns">Widgets make up dashboards designed for TV screens</p>
+    <section>
+    <div class="fr w-100 w-80-l mv4 cf">
+      <p class="f6 black-40">Background</p>
+      <p class="f5 mt0 mb4 mb5-ns measure-wide lh-copy">Building a dashboard to keep your team motivated, informed and your business on track starts with the right metrics. Geckoboard connects to data sources via integrations. Integrations pull data directly from the services API allowing customers to build widgets to create dashboards.</p>
+      <section class="mt0 mb4 mb5-ns">
+        <p class="f5 fw6 mt0 mb3 measure-wide lh-copy">Business problems</p>
+        <p class="f5 mt0 mb3 measure-wide lh-copy">1. We needed high quality integrations with more services</p>
+        <p class="f5 mt0 mb3 measure-wide lh-copy mb4 mb5-ns">2. We needed the time and effort required to build this integrations to be drastically reduced</p>
+        <p class="f5 fw6 mt0 mb3 measure-wide lh-copy">Customer needs</p>
+        <p class="f5 mt0 mb3 measure-wide lh-copy">1. Our customers need access to the metrics that matter to their business</p>
+        <p class="f5 mt0 mb3 measure-wide lh-copy">2. Our customers need depth and flexibility to tell the right story with their data</p>
+        <p class="f5 mt0 mb3 measure-wide lh-copy">3. Our customers need useful metrics that are easy to setup</p>
+      </section>
+      <p class="f5 mt0 mb4 mb5-ns measure-wide lh-copy">I had tackled similar problems design our Spreadsheets and Datasets widget builders, they are great for handling generic data but trade off a level of complexity. This project posed the challenge of still offering flexibility but with the opportunity to create a simpler experience.</p>
+    </div>
+    <div class="fr cf mw9 center ph3-ns mt0 mb4 mb5-ns">
+      <div class="cf ph2-ns">
+        <div class="fl w-100 w-50-ns pa2">
+          <img src="/img/case-studies/widget-builder/spreadsheets.png" class="db" alt="Spreadsheets widget builder"/>
+          <p class="f6 black-40 mv2 tc">Spreadsheets widget builder</p>
+        </div>
+        <div class="fl w-100 w-50-ns pa2">
+          <img src="/img/case-studies/widget-builder/datasets.png" class="db" alt="Datasets widget builder"/>
+          <p class="f6 black-40 mv2 tc">Datasets widget builder</p>
+        </div>
+      </div>
+    </div>
+    <div class="fr w-100 w-80-l mv4 cf">
+      <p class="f6 black-40">Strategy</p>
+      <p class="f5 mt0 mb3 measure-wide lh-copy">As one of two cross functional teams we had the ambitious goal of building a platform that re-thinks the way we bring data into Geckoboard affording the opportunity to design an experience that better meets our customers needs for discovering, creating and editing metrics.</p>
+      <p class="f5 mt0 mb3 measure-wide lh-copy">A small team with a big task ahead we needed to prioritise a service and use cases to focus on part of the experience initially. Based on our learnings so far Zendesk was the service and taking a technical approach to solving the most pressing customer problem; lack of flexibility and configurability and using that to inform a simplified, more guided experience felt like the correct plan. This strategy also meant we could move quickly and reuse, extend and modify some existing components and design patterns. This would enable us to get a early version of the feature in the hands of customers and start to get feedback.</p>
+    </div>
+    <div class="fr w-100 w-80-l mv4 cf">
+      <p class="f6 black-40">Insights</p>
+      <p class="f5 mt0 mb3 measure-wide lh-copy">I was able to gain quick insights from our legacy solution. Our own customer support team and product managers already had a lot of feedback and requests from customers this helped to get a braod idea of the issues customers where facing.</p>
+      <p class="f5 mt0 mb4 mb5-ns measure-wide lh-copy">Using intercom I could segment exisiting customer into two buckets. Those who'd had success with existing solution and those who'd failed to add a widget. I wanted to learn more about there approach to choosing metrics and thought's about the experience. These early insights helped steer design exploration and guide the pain points to prioritise.</p>
+    </div>
+    <section>
+      <img src="/img/case-studies/widget-builder/intercom.png" class="db w-80 center" alt="intercom feedback"/>
+    </section>
+    <div class="fr w-100 w-80-l mv4 cf">
+      <p class="f6 black-40">Process</p>
+      <p class="f5 mt0 mb3 measure-wide lh-copy">Designing such a complex and technical feature meant I knew I would benefit from lots of collaboration. So as well a lot of white boarding and sketching sessions I also ran workshops early in the process to get the team thinking about different aspects of the problem and aid my understanding of the technical approach.</p>
+      <p class="f5 mt0 mb4 mb5-ns measure-wide lh-copy">I ran a sketching workshop (crazy 8's) with a focus on quantity not quality of output. I wanted to get divergent ideas for the experience as well as giving others involved the opportunity to get their ideas out of their heads and down on paper and help get on the same page early in the project.</p>
+    </div>
+    <div class="fr cf mw9 center ph3-ns mt0 mb4 mb5-ns">
+      <div class="cf ph2-ns">
+        <div class="fl w-100 w-50-ns pa2">
+          <img src="/img/case-studies/widget-builder/workshop.jpg" class="db w-90 center mb4 br2" alt="Sketching workshop"/>
+        </div>
+        <div class="fl w-100 w-50-ns pa2">
+          <img src="/img/case-studies/widget-builder/c8s.jpg" class="db w-90 center mb4 br2" alt="Sketching workshop"/>
+        </div>
+      </div>
+    </div>
+    <div class="fr w-100 w-80-l mv4 cf">
+      <p class="f5 mb4 mb5-ns measure-wide lh-copy">I ran a user journey session with engineers and product manager to explore different routes users could take to completing the desired goal, in this case creating a useful widget. This workshop was incredibly useful and gave me a greater understanding of the approach engineers planned to take in designing the system and gave them an insight into the way a user may interact with the system.</p>
+    </div>
+    <section>
+      <img src="/img/case-studies/widget-builder/early-process.png" class="db w-80 center mb4 mb5-ns" alt="early design exploration"/>
+    </section>
+    <div class="fr w-100 w-80-l mv4 cf">
+      <p class="f5 mb4 mb5-ns measure-wide lh-copy">Using sketch and designing in low fidelity I was able to work through lots of design explorations quickly. Getting regular feedback was important so I'd catch up with a product manager or member of the frontend team daily when possible to discuss idea and whiteboard out further concepts or details of the user journey.</p>
+    </div>
+    <section>
+      <img src="/img/case-studies/widget-builder/exploration.png" class="db w-80 center mb4 mb5-ns" alt="design exploration"/>
+    </section>
+    <div class="fr w-100 w-80-l mv4 cf">
+      <p class="f6 black-40">Prototyping</p>
+      <p class="f5 mb4 mb5-ns measure-wide lh-copy">Early lo-fi prototypes were created using Atomic to communicate interaction design concepts by running them past user testers recruited from my early Intercom chats I was able to learn quickly which directions were worth pursuing further. This helped me simplify the configuration UI somewhat without trading off flexibility, but it was clear we'd need a simple way for customers create widgets for common metrics.</p>
+    </div>
+    <section>
+      <video class="db w-80 center br2" controls loop>
+        <source src="/img/case-studies/widget-builder/prototype.mp4" alt="Video walkthrough of a lo-fi prototype"/>
+      </video>
+      <p class="f6 black-40 tc mb4 mb5-ns">Example of a lo-fi prototype built using Atomic</p>
+    </section>
+    <div class="fr w-100 w-80-l mv4 cf">
+      <p class="f6 black-40">Refining</p>
+      <p class="f5 mb4 mb5-ns measure-wide lh-copy">I built high fidelity prototypes in HTML, CSS and JS. Over the course of many projects I had built out common UI elements in HTML and CSS which makes designing in code super quick and easy. Deisgning components and creating interfaces in the browser makes iterating over design details and micro-interactions quick and communication with frontend team much simpler. I used Github to handle the workflow and version control and published the prototypes using Github pages to share with the team.</p>
+    </div>
+    <div class="fr cf mw9 center ph3-ns mt0 mb4 mb5-ns">
+      <div class="cf ph2-ns">
+        <div class="fl w-100 w-50-ns pa2">
+          <img src="/img/case-studies/widget-builder/hi-fi-prototype.png" class="db" alt="Hi-fi widget builder"/>
+        </div>
+        <div class="fl w-100 w-50-ns pa2">
+          <img src="/img/case-studies/widget-builder/presets.png" class="db" alt="Hi-fi widget builder"/>
+        </div>
+      </div>
+    </div>
+    <section>
+      <video class="db w-80 center br2" controls loop>
+        <source src="/img/case-studies/widget-builder/prototype-walkthrough.mp4" alt="Video walkthrough of a hi-fi prototype"/>
+      </video>
+      <p class="f6 black-40 tc mb4 mb5-ns">Hi-fi protoypes for testing and implementation using HTML, CSS, JS</p>
+    </section>
+    <div class="fr w-100 w-80-l mv4 cf">
+      <p class="f6 black-40">Roll out and feedback</p>
+      <p class="f5 mb4 mb5-ns measure-wide lh-copy">We released the feature in milestones allowing us to built user testing and feedback into the cadence of shipping. This method of continous feedback not only helped inform the product but also helped us set success metrics for the project.</p>
+    </div>
+    <section>
+      <video class="db w-80 center br2" controls loop>
+        <source src="/img/case-studies/widget-builder/zd-walkthrough.mp4" alt="Video walkthrough of the Zendesk integration"/>
+      </video>
+      <p class="f6 black-40 mv4 tc mb4 mb5-ns">First release of the Zendesk integration</p>
+    </section>
+    <div class="fr w-100 w-80-l mv4 cf">
+      <p class="f6 black-40">Next steps</p>
+      <p class="f5 mb4 mb5-ns measure-wide lh-copy">We'd broken ground on our most ambitous project yet, the result of the hard work menant we where able to release the next integration in a week. I hired a second designer to join the team and help us work on the next phase of the project focussing on user research, enabling us to explore even more opportunities. We're tracking well against success metrics and preparing the tackle more integrations.</p>
+    </div>
+    <div class="fr w-100 w-80-l mv4 cf">
+      <p class="f6 black-40">Summary</p>
+      <p class="f5 mt0 mb3 measure-wide lh-copy">This is a quick run down of a ambitious and fast moving project. Things that have made this project a success:</p>
+      <p class="f5 mt0 mb3 measure-wide lh-copy">- Setting up a method for continuous feedback via intercom chats and customer calls</p>
+      <p class="f5 mt0 mb3 measure-wide lh-copy">- Rapid prototyping to get quick feedback on design directions, workflows and interaction design</p>
+      <p class="f5 mt0 mb3 measure-wide lh-copy">- Opting to "build in the wild" releasing early and often meant meaningful feedback customers from the start</p>
+      <p class="f5 mt0 mb3 measure-wide lh-copy">- Setting goals but checking in on assumptions and adjusting as we learnt more</p>
+      <p class="f5 mb4 mb5-ns measure-wide lh-copy">- Having success metrics to measure the quantitative impact of the work we had shipped</p>
+    </div>
+    <div class="fr w-100 w-80-l mv4">
+      <p class="f5 mt0 lh-copy measure-wide">
+        <a class="link black-90 hover-folio-orange" href="/work">&#x21b3; <span class="bb b-folio-orange">More work</span></a>
+      </p>
+    </div>
+  </main>
+</Layout>

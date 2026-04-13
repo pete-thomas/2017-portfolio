@@ -1,0 +1,67 @@
+---
+interface Props {
+  title: string;
+  bodyClass?: string;
+}
+const { title, bodyClass = 'sans-serif near-black page' } = Astro.props;
+---
+
+<!doctype html>
+<html class="no-js" lang="">
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <title>{title}</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="apple-touch-icon" href="/icon.png">
+    <link rel="stylesheet" href="/css/tachyons.min.css">
+    <link rel="stylesheet" href="/css/main.css">
+  </head>
+  <body class={bodyClass}>
+    <header>
+      <nav class="dt w-100 border-box pa3 ph4-ns">
+        <a class="dtc v-mid link black-90 dim w-50" href="/" title="Home">
+          <span class="dib">Peter Thomas</span>
+        </a>
+        <div class="dtc v-mid w-50 tr">
+          <a class="link black-90 dim f6 f5-ns dib mr3 mr4-ns" href="/work" title="Work">Work</a>
+          <a class="link black-90 dim f6 f5-ns dib" href="/about" title="About">About</a>
+        </div>
+      </nav>
+    </header>
+
+    <slot />
+
+    <footer class="pa4 f7">
+      <div class="dt dt--fixed w-100">
+        <div class="dn dtc-ns v-mid">
+          <p class="dib pr3 mb3">
+            © Peter Thomas — 2017
+          </p>
+        </div>
+        <div class="db dtc-ns tc tr-ns v-mid">
+          <a href="https://twitter.com/tuptup" class="link dib mr3 black-90 bb b-folio-orange hover-folio-orange">
+            Twitter
+          </a>
+          <a href="https://www.linkedin.com/in/peter--thomas" class="link dib mr3 black-90 bb b-folio-orange hover-folio-orange">
+            LinkedIn
+          </a>
+          <a href="mailto:peter.thomas@madeforthe.net" class="link dib black-90">
+            👋 <span class="bb b-folio-orange hover-folio-orange">Say hello</span>
+          </a>
+        </div>
+      </div>
+    </footer>
+
+    <script is:inline src="/js/vendor/modernizr-3.5.0.min.js"></script>
+    <script is:inline src="https://code.jquery.com/jquery-3.2.1.min.js" integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4=" crossorigin="anonymous"></script>
+    <script is:inline src="/js/plugins.js"></script>
+    <script is:inline src="/js/main.js"></script>
+    <script is:inline>
+      window.ga=function(){ga.q.push(arguments)};ga.q=[];ga.l=+new Date;
+      ga('create','UA-6454990-2','auto');ga('send','pageview')
+    </script>
+    <script is:inline src="https://www.google-analytics.com/analytics.js" async defer></script>
+  </body>
+</html>

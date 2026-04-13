@@ -1,0 +1,42 @@
+a {
+  outline: none; }
+
+.folio-orange {
+  color: #FF6237; }
+
+.bg-folio-orange {
+  background-color: #FF6237; }
+
+.b-folio-orange {
+  border-color: #FF6237; }
+
+.hover-folio-orange:focus, .hover-folio-orange:hover {
+  color: #FF6237; }
+
+.gecko-green {
+  color: #8dc63f; }
+
+.huddle-blue {
+  color: #0089D0; }
+
+.ma-gold {
+  color: #e8be56; }
+
+.cn-claret {
+  color: #AE2F3D; }
+
+.shadow-2 {
+  box-shadow: 0 19px 50px -14px rgba(0, 0, 0, 0.73); }
+
+footer {
+  pointer-events: none; }
+  footer a {
+    pointer-events: initial; }
+
+.page {
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column; }
+
+.content {
+  flex: 1; }
